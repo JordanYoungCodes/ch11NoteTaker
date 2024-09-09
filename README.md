@@ -39,6 +39,10 @@
 - https://github.com/JordanYoungCodes/ch11NoteTaker
 
 ## Video Tutorial
+- https://drive.google.com/file/d/1KcD52kOxKgM9mZhct-3NFOdDrJiKdcQH/view?usp=sharing
+
+## Render Deployment
+- https://ch11notetaker.onrender.com/
 
 ## E-mail
 - jordansyoung@gmail.com
