@@ -76,3 +76,21 @@ body {
   padding: 20px;
   cursor: pointer;
 }
+
+.cont {
+  border: 2px solid black;
+  box-shadow: 2px 2px 8px grey;
+}
+
+.nav {
+  border-bottom: 2px solid black;
+  box-shadow: 2px 2px 8px grey;
+}
+
+.inputStyle {
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 8px grey;
+  padding-left: 20px;
+  
+}

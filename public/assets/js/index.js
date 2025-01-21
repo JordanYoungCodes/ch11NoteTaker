@@ -34,7 +34,8 @@ const getNotes = () =>
     headers: {
       'Content-Type': 'application/json'
     }
-  });
+  }).catch(error => console.error('Error fetching notes:', error));
+
 
 const saveNote = (note) =>
   fetch('/api/notes', {
@@ -182,7 +183,15 @@ const renderNoteList = async (notes) => {
 };
 
 // Gets notes from the db and renders them to the sidebar
-const getAndRenderNotes = () => getNotes().then(renderNoteList);
+const getAndRenderNotes = async () => {
+  try {
+    const notes = await getNotes();
+    await renderNoteList(notes);
+  } catch (error) {
+    console.error('Error rendering notes:', error);
+  }
+};
+
 
 if (window.location.pathname === '/notes') {
   saveNoteBtn.addEventListener('click', handleNoteSave);
